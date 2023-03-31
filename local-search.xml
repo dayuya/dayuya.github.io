@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>sqlserver</title>
+    <link href="/2023/03/31/sqlserver/"/>
+    <url>/2023/03/31/sqlserver/</url>
+    
+    <content type="html"><![CDATA[<h2 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h2><ol><li>创建数据库BookDB</li><li>创建数据表tBook（id、书名、作者、价格、出版社）</li><li>插入4行数据<br>001Java程序设计张三34.00清华大学出版社<br>002Java编程圣经李四66.00清华大学出版社<br>003Python入门王五54.00机械工业出版社<br>004Java面试宝典张三42.00人民邮电出版社</li></ol>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>leancloud</title>
     <link href="/2023/03/31/leancloud/"/>
     <url>/2023/03/31/leancloud/</url>
@@ -60,9 +73,15 @@
     <link href="/2023/03/21/java%E5%9F%BA%E7%A1%80/"/>
     <url>/2023/03/21/java%E5%9F%BA%E7%A1%80/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h2 id="第一章-初识Java"><a href="#第一章-初识Java" class="headerlink" title="第一章 初识Java"></a>第一章 初识Java</h2><ol><li>解什么是程序及Java</li><li>搭建Java运行环境</li><li>如何写Java代码</li><li>编写第一个Java程序</li><li>如何解决程序的错误</li><li>学会注释及输出控制符</li></ol><h2 id="第二章：变量、数据类型和运算符"><a href="#第二章：变量、数据类型和运算符" class="headerlink" title="第二章：变量、数据类型和运算符"></a>第二章：变量、数据类型和运算符</h2><ol><li>认识变量</li><li>如何声明变量</li><li>变量命名规则与数据类型</li><li>赋值运算符</li><li>算数运算符的应用 点击观看</li><li>认识%求余</li><li>数据类型的自动转换</li><li>数据类型的强制转换</li><li>数据的输入</li></ol><h2 id="第三章：条件选择结构"><a href="#第三章：条件选择结构" class="headerlink" title="第三章：条件选择结构"></a>第三章：条件选择结构</h2><ol><li>实例:数字交换</li><li>boolean数据类型与关系运算符</li><li>if条件语句的使用</li><li>逻辑运算符</li><li>运算符的优先级</li><li>else分支</li><li>多重if结构</li><li>if嵌套结构</li><li>switch多分支结构</li><li>实例:求偶数</li><li>实例:判读瑞年</li><li>取随机数</li><li>实例:猜拳游戏1</li><li>实例:猜拳游戏2</li><li>实例:猜拳游戏3</li></ol><h2 id="第四章：循环结构"><a href="#第四章：循环结构" class="headerlink" title="第四章：循环结构"></a>第四章：循环结构</h2><ol><li>章节项目预告</li><li>认识循环</li><li>算术运算符的分类</li><li>while循环语句</li><li>实例:累加求和</li><li>实例:求学员平均成绩</li><li>while循环小结</li><li>do-while循环结构</li><li>实例:猜数字游戏</li><li>安装MyEclipse </li><li>使用MyEclipse新建项目</li><li>使用MyEclipse创建java文件</li><li>程序调试 (1)</li><li>程序调试（2）</li><li>程序调试（3）</li><li>for循环结构</li><li>for循环结构练习</li><li>for循环常见问题及break语句</li><li>Continue语句</li><li>循环嵌套</li><li>实例:九九乘法表</li><li>实例:日历的制作（1）</li><li>实例:日历的制作（2）</li><li>实例:日历的制作（3）</li><li>实例:日历的制作（4）</li><li>实例:日历的制作（5）</li><li>实例:日历的制作（6）</li></ol><h2 id="第五章：数组"><a href="#第五章：数组" class="headerlink" title="第五章：数组"></a>第五章：数组</h2><ol><li>JVM内存分析</li><li>认识数组（1）</li><li>认识数组（2）</li><li>数组的存储原理</li><li>键盘录入赋值</li><li>数组的length属性</li><li>数组求最大值</li><li>数组的排序（1）</li><li>数组的排序（2）</li><li>数组复制算法</li><li>数组查找算法</li><li>数组插入算法</li><li>数组冒泡排序</li><li>选择排序原理</li><li>选择排序实例</li><li>多维数组（1）</li><li>多维数组（2）</li><li>学生成绩管理系统（1）</li><li>学生成绩管理系统（2）</li><li>学生成绩管理系统（3）</li><li>学生成绩管理系统（4）</li><li>学生成绩管理系统（5）</li><li>学生成绩管理系统（6）</li></ol><h2 id="第六章：类与对象"><a href="#第六章：类与对象" class="headerlink" title="第六章：类与对象"></a>第六章：类与对象</h2><h2 id="GUI-编程-JFrame"><a href="#GUI-编程-JFrame" class="headerlink" title="GUI 编程 JFrame"></a>GUI 编程 JFrame</h2>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>java</tag>
+      
+    </tags>
     
   </entry>
   
