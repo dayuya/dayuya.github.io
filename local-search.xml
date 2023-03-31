@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>typecho 安装</title>
+    <link href="/2023/04/01/typecho/"/>
+    <url>/2023/04/01/typecho/</url>
+    
+    <content type="html"><![CDATA[<h2 id="typecho-window"><a href="#typecho-window" class="headerlink" title="typecho window"></a>typecho window</h2><p>外观使用</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>cloudflare 内网穿透</title>
+    <link href="/2023/04/01/cloudflare/"/>
+    <url>/2023/04/01/cloudflare/</url>
+    
+    <content type="html"><![CDATA[<h2 id="cloudflare-windows-http"><a href="#cloudflare-windows-http" class="headerlink" title="cloudflare windows http"></a>cloudflare windows http</h2><h3 id="域名停靠"><a href="#域名停靠" class="headerlink" title="域名停靠"></a>域名停靠</h3><h3 id="本地运行"><a href="#本地运行" class="headerlink" title="本地运行"></a>本地运行</h3><p>下载cloudflare.exe<br>运行<br>配置hostname</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>vscode 远程访问</title>
+    <link href="/2023/04/01/vscode/"/>
+    <url>/2023/04/01/vscode/</url>
+    
+    <content type="html"><![CDATA[<h2 id="远程访问"><a href="#远程访问" class="headerlink" title="远程访问"></a>远程访问</h2><h3 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://code.visualstudio.com/docs/remote/tunnels</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>java基础</title>
+    <link href="/2023/03/21/java%E5%9F%BA%E7%A1%80/"/>
+    <url>/2023/03/21/java%E5%9F%BA%E7%A1%80/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2023/03/20/hello-world/"/>
+    <url>/2023/03/20/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to [Hexo] 这是一篇 适用于hexo的Markdown语法</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><h2 id="新建-文章-Post-，页面-Page-和草稿-Draft"><a href="#新建-文章-Post-，页面-Page-和草稿-Draft" class="headerlink" title="新建 文章(Post)，页面(Page)和草稿(Draft)"></a>新建 文章(Post)，页面(Page)和草稿(Draft)</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new post text</span><br><span class="line">新建后会在/source/_post创建一个【text.md】的文件 </span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new Page text </span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new Draft text </span><br></pre></td></tr></table></figure><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line"></span><br><span class="line">## 二级标题</span><br><span class="line"></span><br><span class="line">## 二级标题</span><br><span class="line"></span><br><span class="line">### 三级标题</span><br><span class="line"></span><br><span class="line">#### 四级标题</span><br><span class="line"></span><br><span class="line">##### 五级标题</span><br><span class="line"></span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure><h3 id="斜体文本"><a href="#斜体文本" class="headerlink" title="斜体文本"></a>斜体文本</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">*斜体文本* </span><br><span class="line">_斜体文本*</span><br></pre></td></tr></table></figure><h3 id="加粗文本"><a href="#加粗文本" class="headerlink" title="加粗文本"></a>加粗文本</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">**加粗文本**</span><br><span class="line">__加粗文本__</span><br></pre></td></tr></table></figure><h3 id="加粗并斜体"><a href="#加粗并斜体" class="headerlink" title="加粗并斜体"></a>加粗并斜体</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">***加粗并斜体文本***</span><br><span class="line">___加粗并斜体文本___</span><br><span class="line">*__加粗并斜体文本__*</span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="高亮"><a href="#高亮" class="headerlink" title="高亮"></a>高亮</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`高亮`文字</span><br></pre></td></tr></table></figure><h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">~~删除文本~~</span><br></pre></td></tr></table></figure><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1. 一级列表</span><br><span class="line"></span><br><span class="line">   1. 二级列表</span><br><span class="line">   2. 二级列表</span><br><span class="line">      3. 三级列表</span><br><span class="line">      4. 三级列表</span><br><span class="line"></span><br><span class="line">2. 一级列表</span><br><span class="line"></span><br><span class="line">3. 一级列表</span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">* 一级列表</span><br><span class="line">  * 二级列表</span><br><span class="line">  * 二级列表</span><br><span class="line">    * 三级列表</span><br><span class="line">    * 三级列表</span><br><span class="line">* 一级列表</span><br><span class="line">* 一级列表</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">左对齐</span><br><span class="line">:----------</span><br><span class="line">右对齐</span><br><span class="line">----------:</span><br><span class="line">居中对齐</span><br><span class="line">:----------:</span><br><span class="line"></span><br><span class="line">| 课程表 | 星期一  |  星期二  |  星期三  | 星期四  |  星期五  |</span><br><span class="line">| :----: | :-----: | :------: | :------: | :-----: | :------: |</span><br><span class="line">|  上午  |  Math   | Chinese  |  Music   |  Math   | Chinese  |</span><br><span class="line">|  下午  | Chinese |    PE    |   Math   | English | Computer |</span><br><span class="line">| 晚自习 | English | Computer | Computer |  Math   | Chinese  |</span><br><span class="line"></span><br></pre></td></tr></table></figure><table><thead><tr><th align="center">课程表</th><th align="center">星期一</th><th align="center">星期二</th><th align="center">星期三</th><th align="center">星期四</th><th align="center">星期五</th></tr></thead><tbody><tr><td align="center">上午</td><td align="center">Math</td><td align="center">Chinese</td><td align="center">Music</td><td align="center">Math</td><td align="center">Chinese</td></tr><tr><td align="center">下午</td><td align="center">Chinese</td><td align="center">PE</td><td align="center">Math</td><td align="center">English</td><td align="center">Computer</td></tr><tr><td align="center">晚自习</td><td align="center">English</td><td align="center">Computer</td><td align="center">Computer</td><td align="center">Math</td><td align="center">Chinese</td></tr></tbody></table><table><thead><tr><th align="center">课程表</th><th align="center">星期一</th></tr></thead><tbody><tr><td align="center">上午</td><td align="center">Math</td></tr></tbody></table><h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[博客主页](https://baidu.com)</span><br><span class="line"></span><br><span class="line">[follow me](https://baidu.com)</span><br></pre></td></tr></table></figure><h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">![头像](https://gitee.com/yesright/blogimage/raw/master/img/avatar.png)</span><br><span class="line">![头像](/img/avatar.png)  //可以用相对地址，此处没有对应图片所以无法显示</span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="转义符"><a href="#转义符" class="headerlink" title="转义符"></a>转义符</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\  </span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
