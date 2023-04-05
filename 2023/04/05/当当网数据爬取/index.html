@@ -16,22 +16,22 @@
   <meta name="author" content="dayu">
   <meta name="keywords" content="https://dayu.yudayu.eu.org/">
   
-    <meta name="description" content="要求 创建数据库BookDB 创建数据表tBook（id、书名、作者、价格、出版社） 插入4行数据001	Java程序设计	张三	34.00	清华大学出版社002	Java编程圣经	李四	66.00	清华大学出版社003	Python入门	王五	54.00	机械工业出版社004	Java面试宝典	张三	42.00	人民邮电出版社">
+    <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637import requestsfrom lxml import etreeimport urllib.requestimport jsonimport timeimport os# 取所有分类url &#x3D; &amp;#x27;http:&#x2F;&#x2F;category.dangdang.co">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sqlserver">
-<meta property="og:url" content="http://dayuya.github.io'/2023/03/31/sqlserver/index.html">
+<meta property="og:title" content="当当网数据爬取">
+<meta property="og:url" content="http://dayuya.github.io'/2023/04/05/%E5%BD%93%E5%BD%93%E7%BD%91%E6%95%B0%E6%8D%AE%E7%88%AC%E5%8F%96/index.html">
 <meta property="og:site_name" content="人间储物君">
-<meta property="og:description" content="要求 创建数据库BookDB 创建数据表tBook（id、书名、作者、价格、出版社） 插入4行数据001	Java程序设计	张三	34.00	清华大学出版社002	Java编程圣经	李四	66.00	清华大学出版社003	Python入门	王五	54.00	机械工业出版社004	Java面试宝典	张三	42.00	人民邮电出版社">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637import requestsfrom lxml import etreeimport urllib.requestimport jsonimport timeimport os# 取所有分类url &#x3D; &amp;#x27;http:&#x2F;&#x2F;category.dangdang.co">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-03-31T12:32:00.000Z">
-<meta property="article:modified_time" content="2023-03-31T12:39:37.624Z">
+<meta property="article:published_time" content="2023-04-05T13:12:00.000Z">
+<meta property="article:modified_time" content="2023-04-05T13:21:37.583Z">
 <meta property="article:author" content="dayu">
-<meta property="article:tag" content="https:&#x2F;&#x2F;dayu.yudayu.eu.org&#x2F;">
+<meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>sqlserver - 人间储物君</title>
+  <title>当当网数据爬取 - 人间储物君</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -214,7 +214,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="sqlserver"></span>
+            <span id="subtitle" data-typed-text="当当网数据爬取"></span>
           
         </div>
 
@@ -225,8 +225,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-03-31 20:32" pubdate>
-          2023年3月31日 晚上
+        <time datetime="2023-04-05 21:12" pubdate>
+          2023年4月5日 晚上
         </time>
       </span>
     
@@ -237,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          146 字
+          1.1k 字
         
       </span>
     
@@ -248,7 +248,7 @@
         
         
         
-          2 分钟
+          10 分钟
         
       </span>
     
@@ -286,17 +286,12 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">sqlserver</h1>
+            <h1 style="display: none">当当网数据爬取</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h2><ol>
-<li>创建数据库BookDB</li>
-<li>创建数据表tBook（id、书名、作者、价格、出版社）</li>
-<li>插入4行数据<br>001	Java程序设计	张三	34.00	清华大学出版社<br>002	Java编程圣经	李四	66.00	清华大学出版社<br>003	Python入门	王五	54.00	机械工业出版社<br>004	Java面试宝典	张三	42.00	人民邮电出版社</li>
-</ol>
-
+                <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> requests<br><span class="hljs-keyword">from</span> lxml <span class="hljs-keyword">import</span> etree<br><span class="hljs-keyword">import</span> urllib.request<br><span class="hljs-keyword">import</span> json<br><span class="hljs-keyword">import</span> time<br><br><span class="hljs-keyword">import</span> os<br><br><span class="hljs-comment"># 取所有分类</span><br>url = <span class="hljs-string">&#x27;http://category.dangdang.com/?ref=www-0-C&#x27;</span><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">get_HTML</span>(<span class="hljs-params">url</span>):<br>    res_info =requests.get(url) <br>    <span class="hljs-keyword">return</span> etree.HTML(res_info.text)<br>tree=get_HTML(url)<br><br>type_m=tree.xpath(<span class="hljs-string">&#x27;//div[@class=&quot;classify_books&quot;]&#x27;</span>)<br><br>type_c=&#123;&#125;<br><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> type_m:<br>    tushu=i.xpath(<span class="hljs-string">&quot;./div/h3/a/text()&quot;</span>)[<span class="hljs-number">0</span>]<span class="hljs-comment">#总分类name</span><br>    tushu_type=i.xpath(<span class="hljs-string">&#x27;.//div[@class=&quot;classify_kind_name&quot;]/a/text()&#x27;</span>)<span class="hljs-comment">#总分类下的分类name </span><br>    x=&#123;&#125;<br>    y=<span class="hljs-number">0</span><br>    <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> tushu_type:<br>        y=y+<span class="hljs-number">1</span><br>        tushu_type_typename=i.xpath(<span class="hljs-string">f&#x27;(./div/ul)[<span class="hljs-subst">&#123;y&#125;</span>]/li/a/text()&#x27;</span>)<span class="hljs-comment">#总分类下的分类下的分类name</span><br>        tushu_type_typehref=i.xpath(<span class="hljs-string">f&#x27;(./div/ul)[<span class="hljs-subst">&#123;y&#125;</span>]/li/a/@href&#x27;</span>)<span class="hljs-comment">#总分类下的分类下的分类name</span><br>        x[j]=[]<br>        type_c[tushu]=x<br>        <span class="hljs-keyword">for</span> op <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(tushu_type_typename)):<br>             type_c[tushu][j].append(&#123;<span class="hljs-string">&quot;title&quot;</span>:tushu_type_typename[op],<span class="hljs-string">&quot;href&quot;</span>:tushu_type_typehref[op]&#125;)<br>             <br><span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(<span class="hljs-string">&quot;type_c.json&quot;</span>, <span class="hljs-string">&#x27;w&#x27;</span>, encoding=<span class="hljs-string">&#x27;utf-8&#x27;</span>) <span class="hljs-keyword">as</span> dayu:<br>        <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;正在写入..&#x27;</span>) <br>        json.dump(type_c, dayu, indent=<span class="hljs-number">4</span>, ensure_ascii=<span class="hljs-literal">False</span>)<br>        <span class="hljs-built_in">print</span>(<span class="hljs-string">&#x27;写完拉..&#x27;</span>)<br></code></pre></td></tr></table></figure>
                 
               </div>
             
@@ -304,6 +299,13 @@
             <div>
               <div class="post-metas my-3">
   
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/python/">#python</a>
+      
+    </div>
   
 </div>
 
@@ -313,8 +315,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>sqlserver</div>
-      <div>http://dayuya.github.io&#39;/2023/03/31/sqlserver/</div>
+      <div>当当网数据爬取</div>
+      <div>http://dayuya.github.io&#39;/2023/04/05/当当网数据爬取/</div>
     </div>
     <div class="license-meta">
       
@@ -326,7 +328,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年3月31日</div>
+          <div>2023年4月5日</div>
         </div>
       
       
@@ -358,18 +360,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/03/31/speedgithub/" title="speedgithub">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">speedgithub</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/03/31/leancloud/" title="leancloud">
-                        <span class="hidden-mobile">leancloud</span>
+                      <a href="/2023/04/05/python-%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%9B%BF%E6%8D%A2/" title="python 字符串替换">
+                        <span class="hidden-mobile">python 字符串替换</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
