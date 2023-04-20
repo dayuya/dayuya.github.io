@@ -23,14 +23,18 @@
 <meta property="og:site_name" content="人间储物君">
 <meta property="og:description" content="方法的重载- 在同一个类中，定义了多个同名的方法，这些同名的方法具有同种的功能。 - 每个方法具有不同的参数类型或参数个数，这些同名的方法，就构成了重载关系   12345678910&#x2F;&#x2F;案例 重载public class MethdDemo &amp;#123;    public static void fn(int a)&amp;#123;        &#x2F;&#x2F;方法体   &amp;#125;   public st">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://dayuya.github.io'/%5Cimages%5Cpasted-1.png">
+<meta property="og:image" content="http://dayuya.github.io'/images/pasted-1.png">
 <meta property="og:image" content="http://dayuya.github.io'/images/pasted-2.png">
+<meta property="og:image" content="http://dayuya.github.io'/images/pasted-3.png">
+<meta property="og:image" content="http://dayuya.github.io'/%5Cimages%5Cpasted-6.png">
+<meta property="og:image" content="http://dayuya.github.io'/%5Cimages%5Cpasted-4.png">
+<meta property="og:image" content="http://dayuya.github.io'/%5Cimages%5Cpasted-5.png">
 <meta property="article:published_time" content="2023-04-11T08:17:52.000Z">
-<meta property="article:modified_time" content="2023-04-12T07:03:28.990Z">
+<meta property="article:modified_time" content="2023-04-18T14:13:26.721Z">
 <meta property="article:author" content="dayu">
 <meta property="article:tag" content="https:&#x2F;&#x2F;dayu.yudayu.eu.org&#x2F;">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://dayuya.github.io'/%5Cimages%5Cpasted-1.png">
+<meta name="twitter:image" content="http://dayuya.github.io'/images/pasted-1.png">
   
   
   
@@ -240,7 +244,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.9k 字
+          3k 字
         
       </span>
     
@@ -251,7 +255,7 @@
         
         
         
-          24 分钟
+          25 分钟
         
       </span>
     
@@ -329,7 +333,7 @@
 
 <h3 id="双色球彩票系统"><a href="#双色球彩票系统" class="headerlink" title="双色球彩票系统"></a>双色球彩票系统</h3><pre><code class="hljs">    功能:打印奖池号码 打印用户号码
 </code></pre>
-<p><img src="/%5Cimages%5Cpasted-1.png" srcset="/img/loading.gif" lazyload alt="upload successful"></p>
+<p><img src="/../images/pasted-1.png" srcset="/img/loading.gif" lazyload alt="upload successful"></p>
 <figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">//<span class="hljs-number">6</span>个红球 <span class="hljs-number">1</span>个蓝球 数组长度：<span class="hljs-number">7</span><br>      Random r=<span class="hljs-built_in">new</span> Random();<br>      <span class="hljs-type">int</span>[] arr=<span class="hljs-built_in">new</span> <span class="hljs-type">int</span>[<span class="hljs-number">7</span>];<br>      <span class="hljs-type">int</span>[] userarr=<span class="hljs-built_in">new</span> <span class="hljs-type">int</span>[<span class="hljs-number">7</span>];<br>      <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;arr.length<span class="hljs-number">-1</span>;i++)&#123;<br>          <span class="hljs-type">int</span> rs=r.nextInt(<span class="hljs-number">16</span>);<br>          <span class="hljs-keyword">if</span>(Arrays.asList(arr).contains(rs))&#123;<br>              <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println(&quot;已存在&quot;);<br>          &#125;<span class="hljs-keyword">else</span>&#123;<br>              // 不存在则写入数组<br>              arr[i]=rs;<br>          &#125;<br>      &#125;<br>      Scanner sc=<span class="hljs-built_in">new</span> Scanner(<span class="hljs-keyword">System</span>.<span class="hljs-keyword">in</span>);<br>      <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;arr.length;i++)&#123;<br>          <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println(&quot;请输入你的&quot;+(i+<span class="hljs-number">1</span>)+&quot;个中奖号码！&quot;);<br>          <span class="hljs-keyword">while</span> (<span class="hljs-keyword">true</span>)&#123;<br>              <span class="hljs-type">int</span> ur=sc.nextInt();<br>              <span class="hljs-keyword">if</span>((<span class="hljs-number">0</span>&gt;ur) || (ur&gt;=<span class="hljs-number">16</span>))&#123;<br>                  <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println(&quot;请输入0~17&quot;);<br>                  <span class="hljs-keyword">continue</span>;<br>              &#125;<br>              userarr[i]=ur;<br>              break;<br>        &#125;<br>      &#125;<br>      <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println(&quot;奖池中奖号码&quot;);<br>      <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i:arr)&#123;<br>          <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println(i);<br>      &#125;<br>      <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println(&quot;你的中奖号码&quot;);<br>      <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i:userarr)&#123;<br>          <span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println(i);<br>      &#125;<br></code></pre></td></tr></table></figure>
 
 
@@ -353,6 +357,12 @@
 <h3 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h3><p>与类名一致，没有返回值<br>创建对象初始化成员变量<br>创建一次调用一次</p>
 <figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs typescript"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">test1</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-built_in">void</span> <span class="hljs-title function_">main</span>(<span class="hljs-params"><span class="hljs-built_in">String</span>[] args</span>) &#123;<br>        test1 test=<span class="hljs-keyword">new</span> <span class="hljs-title function_">test1</span>();<br>    &#125;<br>    <span class="hljs-keyword">public</span> <span class="hljs-title function_">test1</span>(<span class="hljs-params"></span>)&#123;<br>        <span class="hljs-title class_">System</span>.<span class="hljs-property">out</span>.<span class="hljs-title function_">println</span>(<span class="hljs-string">&quot;我被调用了吗&quot;</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 <h3 id="javaBean-类"><a href="#javaBean-类" class="headerlink" title="javaBean 类"></a>javaBean 类</h3><p><img src="/images/pasted-2.png" srcset="/img/loading.gif" lazyload alt="upload successful"></p>
+<h3 id="成员变量和局部变量的区别"><a href="#成员变量和局部变量的区别" class="headerlink" title="成员变量和局部变量的区别"></a>成员变量和局部变量的区别</h3><p><img src="/images/pasted-3.png" srcset="/img/loading.gif" lazyload alt="upload successful"></p>
+<h3 id="对象数组"><a href="#对象数组" class="headerlink" title="对象数组"></a>对象数组</h3><p><img src="/%5Cimages%5Cpasted-6.png" srcset="/img/loading.gif" lazyload alt="upload successful"><br><img src="/%5Cimages%5Cpasted-4.png" srcset="/img/loading.gif" lazyload alt="upload successful"></p>
+<p><img src="/%5Cimages%5Cpasted-5.png" srcset="/img/loading.gif" lazyload alt="upload successful"></p>
+<p>创建一个类用来存取数据，私有成员变量提供get set 方法</p>
+<p>可以new 这个类<br>goods[] arr &#x3D;new goods[3];</p>
+<p>g1.getId() 取id</p>
 
                 
               </div>
