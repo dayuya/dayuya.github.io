@@ -46,7 +46,7 @@
 <meta property="og:image" content="http://dayuya.github.io/images/pasted-28.png">
 <meta property="og:image" content="http://dayuya.github.io/images/pasted-27.png">
 <meta property="article:published_time" content="2023-04-11T08:17:52.000Z">
-<meta property="article:modified_time" content="2023-05-01T15:15:32.706Z">
+<meta property="article:modified_time" content="2023-05-03T12:19:53.678Z">
 <meta property="article:author" content="dayu">
 <meta property="article:tag" content="https:&#x2F;&#x2F;dayu.yudayu.eu.org&#x2F;">
 <meta name="twitter:card" content="summary_large_image">
@@ -260,7 +260,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          5k 字
+          5.6k 字
         
       </span>
     
@@ -271,7 +271,7 @@
         
         
         
-          42 分钟
+          47 分钟
         
       </span>
     
@@ -322,7 +322,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年5月1日 晚上
+                    本文最后更新于：2023年5月3日 晚上
                   
                 
               </p>
@@ -360,6 +360,9 @@
 </ul>
 </li>
 </ol>
+<p>    </p>
+<h3 id="栈和堆的关系"><a href="#栈和堆的关系" class="headerlink" title="栈和堆的关系"></a>栈和堆的关系</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs">栈和堆的关系是这样的：<br>当我们创建一个对象时，首先在栈中分配一块内存，这个内存用于存储这个对象的引用；<br>接着在堆中分配一块内存，用于存储这个对象的数据；<br>最后将这个对象的引用存储到栈中。<br>当这个对象的引用不再被使用时，JVM会在某个时间点将它回收掉，同时也会释放堆中相应的内存空间。<br></code></pre></td></tr></table></figure>
+
 <h3 id="随机数-验证码"><a href="#随机数-验证码" class="headerlink" title="随机数 验证码"></a>随机数 验证码</h3><p>    </p>
 <figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs reasonml"><span class="hljs-comment">//实现大小写a~z 的验证码</span><br>        <span class="hljs-built_in">char</span><span class="hljs-literal">[]</span> chs=<span class="hljs-keyword">new</span> <span class="hljs-built_in">char</span><span class="hljs-literal">[<span class="hljs-number">52</span>]</span>;<br>        <span class="hljs-keyword">for</span>(<span class="hljs-built_in">int</span> i=<span class="hljs-number">0</span>;i&lt;chs.length;i++)&#123;<br>            <span class="hljs-keyword">if</span>(i&lt;=<span class="hljs-number">25</span>)&#123;<br>                chs<span class="hljs-literal">[<span class="hljs-identifier">i</span>]</span>=(<span class="hljs-built_in">char</span>)(<span class="hljs-number">97</span>+i);<br>            &#125;<span class="hljs-keyword">else</span> &#123;<br>                chs<span class="hljs-literal">[<span class="hljs-identifier">i</span>]</span>=(<span class="hljs-built_in">char</span>)(<span class="hljs-number">65</span>+i-<span class="hljs-number">26</span>);<br>            &#125;<br><br>        &#125;<br>        Random r=<span class="hljs-keyword">new</span> <span class="hljs-constructor">Random()</span>;<br>        <span class="hljs-comment">//随机数不包含 chs.length</span><br>        <span class="hljs-built_in">int</span> randomIndex=r.next<span class="hljs-constructor">Int(<span class="hljs-params">chs</span>.<span class="hljs-params">length</span>)</span>;<br>        <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">System</span>.</span></span>out.println(chs<span class="hljs-literal">[<span class="hljs-identifier">randomIndex</span>]</span>);<br></code></pre></td></tr></table></figure>
 
@@ -379,7 +382,7 @@
   类的成员方法：一般为动词
 </code></pre>
 <p>获得对象:</p>
-<pre><code class="hljs">类名new 一下 类名 对象名=new 类名()
+<pre><code class="hljs">类名new 一下: 类名 对象名=new 类名()
 </code></pre>
 <p>通过对象使用 类的方法:</p>
 <pre><code class="hljs">对象名.方法名()
@@ -468,6 +471,10 @@ String str=sj.add(1).add(2).add(3).toString();
 </ul>
 <p>需要注意的是，ArrayList是非线程安全的，如果多个线程同时访问一个ArrayList对象，则需要实现适当的同步机制。</p>
 <p>以上是ArrayList的基本使用方法，更多的方法和详细说明可以参考Java官方文档。</p>
+<h3 id="static-关键字解析"><a href="#static-关键字解析" class="headerlink" title="static 关键字解析"></a>static 关键字解析</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs text">在Java中，static关键字可以用于字段、方法和代码块上。<br><br>当用于字段上时，static关键字表示该字段是静态的，也就是说这个属性属于类而不是属于对象，它被所有的对象实例共享。因此，static字段可以通过类名调用，而不需要生成对象实例。同时，静态字段的值在整个程序运行期间都是唯一不变的，因为它只会被初始化一次。<br><br>当用于方法上时，static关键字表示该方法是静态方法，也就是说这个方法属于类而不是属于对象。和静态字段一样，它可以通过类名调用而不需要生成对象实例。静态方法不能访问对象的非静态属性，同时也不能使用this关键字。<br><br>当用于代码块上时，static关键字表示该代码块是静态代码块，它会在类被加载时执行，且仅会执行一次，通常用于初始化静态字段或执行一些静态代码。<br><br>总之，static关键字的作用是将字段或方法与对象之间的关系转化为与类之间的关系，使得我们可以在没有任何实例对象的情况下访问类或执行特定的代码块。<br><br><br></code></pre></td></tr></table></figure>
+
+
+
 
                 
               </div>
