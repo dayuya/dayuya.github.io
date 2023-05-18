@@ -45,8 +45,9 @@
 <meta property="og:image" content="http://dayuya.github.io/images/pasted-25.png">
 <meta property="og:image" content="http://dayuya.github.io/images/pasted-28.png">
 <meta property="og:image" content="http://dayuya.github.io/images/pasted-27.png">
+<meta property="og:image" content="http://dayuya.github.io/images/pasted-32.png">
 <meta property="article:published_time" content="2023-04-11T08:17:52.000Z">
-<meta property="article:modified_time" content="2023-05-03T12:19:53.678Z">
+<meta property="article:modified_time" content="2023-05-10T08:01:41.293Z">
 <meta property="article:author" content="dayu">
 <meta property="article:tag" content="https:&#x2F;&#x2F;dayu.yudayu.eu.org&#x2F;">
 <meta name="twitter:card" content="summary_large_image">
@@ -260,7 +261,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          5.6k 字
+          7.1k 字
         
       </span>
     
@@ -271,7 +272,7 @@
         
         
         
-          47 分钟
+          60 分钟
         
       </span>
     
@@ -322,7 +323,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年5月3日 晚上
+                    本文最后更新于：2023年5月10日 下午
                   
                 
               </p>
@@ -473,9 +474,31 @@ String str=sj.add(1).add(2).add(3).toString();
 <p>以上是ArrayList的基本使用方法，更多的方法和详细说明可以参考Java官方文档。</p>
 <h3 id="static-关键字解析"><a href="#static-关键字解析" class="headerlink" title="static 关键字解析"></a>static 关键字解析</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs text">在Java中，static关键字可以用于字段、方法和代码块上。<br><br>当用于字段上时，static关键字表示该字段是静态的，也就是说这个属性属于类而不是属于对象，它被所有的对象实例共享。因此，static字段可以通过类名调用，而不需要生成对象实例。同时，静态字段的值在整个程序运行期间都是唯一不变的，因为它只会被初始化一次。<br><br>当用于方法上时，static关键字表示该方法是静态方法，也就是说这个方法属于类而不是属于对象。和静态字段一样，它可以通过类名调用而不需要生成对象实例。静态方法不能访问对象的非静态属性，同时也不能使用this关键字。<br><br>当用于代码块上时，static关键字表示该代码块是静态代码块，它会在类被加载时执行，且仅会执行一次，通常用于初始化静态字段或执行一些静态代码。<br><br>总之，static关键字的作用是将字段或方法与对象之间的关系转化为与类之间的关系，使得我们可以在没有任何实例对象的情况下访问类或执行特定的代码块。<br><br><br></code></pre></td></tr></table></figure>
 
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><p>如果子类父类中出现<strong>重名</strong>的成员变量，这时的访问是<strong>有影响的</strong>。代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Fu1</span> &#123;<br>	<span class="hljs-comment">// Fu中的成员变量。</span><br>	<span class="hljs-type">int</span> <span class="hljs-variable">num</span> <span class="hljs-operator">=</span> <span class="hljs-number">5</span>;<br>&#125;<br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Zi1</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Fu1</span> &#123;<br>	<span class="hljs-comment">// Zi中的成员变量</span><br>	<span class="hljs-type">int</span> <span class="hljs-variable">num</span> <span class="hljs-operator">=</span> <span class="hljs-number">6</span>;<br>  <br>	<span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">show</span><span class="hljs-params">()</span> &#123;<br>		<span class="hljs-comment">// 访问父类中的num</span><br>		System.out.println(<span class="hljs-string">&quot;Fu num=&quot;</span> + num);<br>		<span class="hljs-comment">// 访问子类中的num</span><br>		System.out.println(<span class="hljs-string">&quot;Zi num=&quot;</span> + num);<br>	&#125;<br>&#125;<br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Demo04</span> &#123;<br>	<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>      	<span class="hljs-comment">// 创建子类对象</span><br>		<span class="hljs-type">Zi1</span> <span class="hljs-variable">z</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Zi1</span>(); <br>      	<span class="hljs-comment">// 调用子类中的show方法</span><br>		z1.show(); <br>	&#125;<br>&#125;<br>演示结果：<br><span class="hljs-type">Fu</span> <span class="hljs-variable">num</span> <span class="hljs-operator">=</span> <span class="hljs-number">6</span><br><span class="hljs-type">Zi</span> <span class="hljs-variable">num</span> <span class="hljs-operator">=</span> <span class="hljs-number">6</span><br></code></pre></td></tr></table></figure>
+<p>子父类中出现了同名的成员变量时，子类会优先访问自己对象中的成员变量。如果此时想访问父类成员变量如何解决呢？我们可以使用super关键字。</p>
+<h3 id="super访问父类成员变量"><a href="#super访问父类成员变量" class="headerlink" title="super访问父类成员变量"></a>super访问父类成员变量</h3><p>子父类中出现了同名的成员变量时，在子类中需要访问父类中非私有成员变量时，需要使用<code>super</code> 关键字，修饰父类成员变量，类似于之前学过的 <code>this</code> 。</p>
+<p>需要注意的是：<strong>super代表的是父类对象的引用，this代表的是当前对象的引用。</strong></p>
+<p><strong>使用格式：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-built_in">super</span>.父类成员变量名<br></code></pre></td></tr></table></figure>
+
+<p>子类方法需要修改，代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">class</span> <span class="hljs-title class_">Fu</span> &#123;<br>	<span class="hljs-comment">// Fu中的成员变量。</span><br>	<span class="hljs-type">int</span> <span class="hljs-variable">num</span> <span class="hljs-operator">=</span> <span class="hljs-number">5</span>;<br>&#125;<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Zi</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_">Fu</span> &#123;<br>	<span class="hljs-comment">// Zi中的成员变量</span><br>	<span class="hljs-type">int</span> <span class="hljs-variable">num</span> <span class="hljs-operator">=</span> <span class="hljs-number">6</span>;<br>  <br>	<span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">show</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-type">int</span> <span class="hljs-variable">num</span> <span class="hljs-operator">=</span> <span class="hljs-number">1</span>;<br>      <br>        <span class="hljs-comment">// 访问方法中的num</span><br>        System.out.println(<span class="hljs-string">&quot;method num=&quot;</span> + num);<br>        <span class="hljs-comment">// 访问子类中的num</span><br>        System.out.println(<span class="hljs-string">&quot;Zi num=&quot;</span> + <span class="hljs-built_in">this</span>.num);<br>        <span class="hljs-comment">// 访问父类中的num</span><br>        System.out.println(<span class="hljs-string">&quot;Fu num=&quot;</span> + <span class="hljs-built_in">super</span>.num);<br>	&#125;<br>&#125;<br><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Demo04</span> &#123;<br>	<span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>      	<span class="hljs-comment">// 创建子类对象</span><br>		<span class="hljs-type">Zi1</span> <span class="hljs-variable">z</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Zi1</span>(); <br>      	<span class="hljs-comment">// 调用子类中的show方法</span><br>		z1.show(); <br>	&#125;<br>&#125;<br><br>演示结果：<br>method num=<span class="hljs-number">1</span><br>Zi num=<span class="hljs-number">6</span><br>Fu num=<span class="hljs-number">5</span><br></code></pre></td></tr></table></figure>
+
+<blockquote>
+<p>小贴士：Fu 类中的成员变量是非私有的，子类中可以直接访问。若Fu 类中的成员变量私有了，子类是不能直接访问的。通常编码时，我们遵循封装的原则，使用private修饰成员变量，那么如何访问父类的私有成员变量呢？对！<strong>可以在父类中提供公共的getXxx方法和setXxx方法</strong>。</p>
+</blockquote>
+<h3 id="成员方法重名"><a href="#成员方法重名" class="headerlink" title="成员方法重名"></a>成员方法重名</h3><p>如果子类父类中出现<strong>重名</strong>的成员方法，则创建子类对象调用该方法的时候，子类对象会优先调用自己的方法。</p>
+<h3 id="Override重写注解"><a href="#Override重写注解" class="headerlink" title="@Override重写注解"></a>@Override重写注解</h3><h3 id="final-常量"><a href="#final-常量" class="headerlink" title="final 常量"></a>final 常量</h3><h3 id="静态代码块"><a href="#静态代码块" class="headerlink" title="静态代码块"></a>静态代码块</h3><p>只运行一次</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs actionscript"><span class="hljs-keyword">static</span>&#123;<br><br>&#125;<br></code></pre></td></tr></table></figure>
+
+<h3 id="java-反编译"><a href="#java-反编译" class="headerlink" title="java 反编译"></a>java 反编译</h3><p>把编译好的class 文件变成原来的文件</p>
+<p>javap HelloWorld.class</p>
+<p><img src="/images/pasted-32.png" srcset="/img/loading.gif" lazyload alt="java反编译"></p>
+<h3 id="匿名内部类"><a href="#匿名内部类" class="headerlink" title="匿名内部类"></a>匿名内部类</h3><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-built_in">new</span> Dog()&#123;<br>@Override<br>  <span class="hljs-built_in">public</span> <span class="hljs-type">void</span> <span class="hljs-keyword">show</span>()&#123;<br>   	<span class="hljs-keyword">System</span>.<span class="hljs-keyword">out</span>.println(&quot;重写之后方法&quot;);<br>  &#125;<br>&#125;.<span class="hljs-keyword">show</span>();<br></code></pre></td></tr></table></figure>
 
 
-
+<h3 id="项目界面"><a href="#项目界面" class="headerlink" title="项目界面"></a>项目界面</h3>
                 
               </div>
             
