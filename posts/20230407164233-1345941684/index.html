@@ -16,15 +16,15 @@
   <meta name="author" content="dayu">
   <meta name="keywords" content="https://dayu.yudayu.eu.org/">
   
-    <meta name="description" content="安装命令 1docker run -d --restart&#x3D;always -v &#x2F;usbdata&#x2F;alist:&#x2F;data -p 5244:5244 -e PUID&#x3D;0 -e PGID&#x3D;0 -e UMASK&#x3D;022 --name&#x3D;&quot;alist&quot; xhofe&#x2F;alist:latest 查看密码 1docker exec -it alist .&#x2F;alist admin">
+    <meta name="description" content="安装命令&#x2F;usbdata&#x2F;alist 本地路径&#x2F;data卷 1docker run -d --restart&#x3D;always -v &#x2F;usbdata&#x2F;alist:&#x2F;data -p 5244:5244 -e PUID&#x3D;0 -e PGID&#x3D;0 -e UMASK&#x3D;022 --name&#x3D;&quot;alist&quot; xhofe&#x2F;alist:latest  &#x2F;mnt&#x2F;alist&#x2F;tem 本地挂载路径 1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="docker下安装alist">
 <meta property="og:url" content="http://dayuya.github.io/posts/20230407164233-1345941684/index.html">
 <meta property="og:site_name" content="人间储物君">
-<meta property="og:description" content="安装命令 1docker run -d --restart&#x3D;always -v &#x2F;usbdata&#x2F;alist:&#x2F;data -p 5244:5244 -e PUID&#x3D;0 -e PGID&#x3D;0 -e UMASK&#x3D;022 --name&#x3D;&quot;alist&quot; xhofe&#x2F;alist:latest 查看密码 1docker exec -it alist .&#x2F;alist admin">
+<meta property="og:description" content="安装命令&#x2F;usbdata&#x2F;alist 本地路径&#x2F;data卷 1docker run -d --restart&#x3D;always -v &#x2F;usbdata&#x2F;alist:&#x2F;data -p 5244:5244 -e PUID&#x3D;0 -e PGID&#x3D;0 -e UMASK&#x3D;022 --name&#x3D;&quot;alist&quot; xhofe&#x2F;alist:latest  &#x2F;mnt&#x2F;alist&#x2F;tem 本地挂载路径 1">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-04-07T08:42:33.000Z">
-<meta property="article:modified_time" content="2023-04-07T13:52:41.383Z">
+<meta property="article:modified_time" content="2023-05-27T18:13:10.410Z">
 <meta property="article:author" content="dayu">
 <meta property="article:tag" content="https:&#x2F;&#x2F;dayu.yudayu.eu.org&#x2F;">
 <meta name="twitter:card" content="summary_large_image">
@@ -237,7 +237,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          169 字
+          598 字
         
       </span>
     
@@ -248,7 +248,7 @@
         
         
         
-          2 分钟
+          5 分钟
         
       </span>
     
@@ -299,7 +299,7 @@
               <p class="note note-info">
                 
                   
-                    本文最后更新于：2023年4月7日 晚上
+                    本文最后更新于：2023年5月28日 凌晨
                   
                 
               </p>
@@ -307,7 +307,8 @@
             
               <div class="markdown-body">
                 
-                <h2 id="安装命令"><a href="#安装命令" class="headerlink" title="安装命令"></a>安装命令</h2> <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">docker <span class="hljs-built_in">run</span> -d <span class="hljs-attribute">--restart</span>=always -v /usbdata/alist:/data -p 5244:5244 -e <span class="hljs-attribute">PUID</span>=0 -e <span class="hljs-attribute">PGID</span>=0 -e <span class="hljs-attribute">UMASK</span>=022 <span class="hljs-attribute">--name</span>=<span class="hljs-string">&quot;alist&quot;</span> xhofe/alist:latest<br></code></pre></td></tr></table></figure>
+                <h2 id="安装命令"><a href="#安装命令" class="headerlink" title="安装命令"></a>安装命令</h2><p><code>/usbdata/alist</code> 本地路径<br><code>/data</code>卷<br> <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">docker <span class="hljs-built_in">run</span> -d <span class="hljs-attribute">--restart</span>=always -v /usbdata/alist:/data -p 5244:5244 -e <span class="hljs-attribute">PUID</span>=0 -e <span class="hljs-attribute">PGID</span>=0 -e <span class="hljs-attribute">UMASK</span>=022 <span class="hljs-attribute">--name</span>=<span class="hljs-string">&quot;alist&quot;</span> xhofe/alist:latest<br></code></pre></td></tr></table></figure><br>  <code>/mnt/alist/tem</code> 本地挂载路径<br> <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs awk">docker run -d --restart=always -v <span class="hljs-regexp">/mnt/</span>alist:<span class="hljs-regexp">/mnt/</span>alist<span class="hljs-regexp">/data  -v /m</span>nt<span class="hljs-regexp">/alist/</span>tem:<span class="hljs-regexp">/mnt/</span>alist<span class="hljs-regexp">/tem -p 5244:5244 -e PUID=0 -e PGID=0 -e UMASK=022 --name=&quot;alist&quot; xhofe/</span>alist-aria2:latest<br><br><br></code></pre></td></tr></table></figure></p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">docker run -d --restart=always -v <span class="hljs-regexp">/mnt/u</span>sbdata<span class="hljs-regexp">/alist/</span>data:<span class="hljs-regexp">/mnt/u</span>sbdata<span class="hljs-regexp">/alist/</span>data  -v <span class="hljs-regexp">/mnt/u</span>sbdata<span class="hljs-regexp">/alist/</span>tem:<span class="hljs-regexp">/mnt/u</span>sbdata<span class="hljs-regexp">/alist/</span>tem -p <span class="hljs-number">5244</span>:<span class="hljs-number">5244</span> -e PUID=<span class="hljs-number">0</span> -e PGID=<span class="hljs-number">0</span> -e UMASK=<span class="hljs-number">022</span> --name=<span class="hljs-string">&quot;alist&quot;</span> xhofe/alist-aria2:latest<br></code></pre></td></tr></table></figure>
 <h2 id="查看密码"><a href="#查看密码" class="headerlink" title="查看密码"></a>查看密码</h2> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker <span class="hljs-built_in">exec</span> -it alist ./alist admin<br></code></pre></td></tr></table></figure>
                 
               </div>
