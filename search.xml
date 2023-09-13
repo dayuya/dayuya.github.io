@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>django搭建开发环境</title>
+      <link href="/40922.html"/>
+      <url>/40922.html</url>
+      
+        <content type="html"><![CDATA[<p>环境：win10 vscode<br>建立虚拟环境</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m venv env</span><br></pre></td></tr></table></figure><p>进入虚拟环境</p><ul><li>&amp; D:&#x2F;project&#x2F;pyProject&#x2F;fileshare&#x2F;env&#x2F;Scripts&#x2F;activate.ps1<br>在虚拟环境中安装django</li></ul><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install django</span><br></pre></td></tr></table></figure><p>建立项目</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">django-admin startproject fileShare</span><br></pre></td></tr></table></figure><p><img src="/images/pasted-48.png" alt="项目目录"></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> fileShare</span><br></pre></td></tr></table></figure><p>建立app</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python .\manage.py startapp myapp</span><br></pre></td></tr></table></figure><p>运行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python .\manage.py runserver</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+            <tag> django </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>docker安装redis</title>
       <link href="/44762.html"/>
       <url>/44762.html</url>
