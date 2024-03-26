@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>文章浏览量设置</title>
+      <link href="/8034.html"/>
+      <url>/8034.html</url>
+      
+        <content type="html"><![CDATA[<p>创建Lean Cloud应用<br>首先一句话介绍 Lean Cloud:</p><p>LeanCloud（aka. AVOS Cloud）提供一站式后端云服务，从数据存储、实时聊天、消息推送到移动统计，涵盖应用开发的多方面后端需求。</p><p>我们只用到它的数据存储部分,具体步骤如下：</p><p>首先到『控制台』创建一个应用，名字随便取。<br>点击新建应用的『数据』选项，选择『创建Class』，取名为 ” Counter “ 。<br>点击新建应用右上角的齿轮，在『应用Key』选项里得到 APP ID 和 APP Key，在后面会用到。<br>修改 Hexo 页面<br>新建 popular_posts.ejs<br>首先在theme&#x2F;你的主题 &#x2F;layout&#x2F;_widget 目录下新建 popular_posts.ejs 文件,其内容为</p><p>&lt;% if (site.posts.length){ %&gt;<br>    <div class="widget-wrap"><br>    <h3 class="widget-title">浏览数目</h3><br>    <div class="widget"><br>      <ul class="popularlist"><br>      </ul><br>    </div><br>  </div><br>&lt;% } %&gt;<br>修改head.ejs<br>修改theme&#x2F;你的主题&#x2F;layout&#x2F;_partial&#x2F;head.ejs文件,在head标签的最后插入：</p><script src="https://leancloud.cn/scripts/lib/av-0.4.6.min.js"></script>  <script>AV.initialize("你的APP ID", "你的APP Key");</script><p>修改after-footer.ejs<br>修改 theme&#x2F; 你的主题 &#x2F;layout&#x2F;_partial&#x2F;after-footer.ejs ,在最后插入：</p><!--page counter part--><script>function addCount (Counter) {        url=$('.article-date').attr('href').trim();    title = $('.article-title').text().trim();    var query=new AV.Query(Counter);    //use url as unique idnetfication    query.equalTo("url",url);    query.find({        success: function(results){            if(results.length>0)            {                var counter=results[0];                counter.fetchWhenSave(true); //get recent result                counter.increment("time");                counter.save();            }            else            {                var newcounter=new Counter();                newcounter.set("title",title);                newcounter.set("url",url);                newcounter.set("time",1);                newcounter.save(null,{                    success: function(newcounter){                    //alert('New object created');                    },                    error: function(newcounter,error){                    alert('Failed to create');                    }                    });            }        },        error: function(error){            //find null is not a error            alert('Error:'+error.code+" "+error.message);        }    });}$(function(){    var Counter=AV.Object.extend("Counter");    //only increse visit counting when intering a page    if ($('.article-title').length == 1)       addCount(Counter);    var query=new AV.Query(Counter);    query.descending("time");    // the sum of popular posts    query.limit(10);     query.find({        success: function(results){                for(var i=0;i<results.length;i++)                    {                    var counter=results[i];                    title=counter.get("title");                    url=counter.get("url");                    time=counter.get("time");                    // add to the popularlist widget                    showcontent=title+" ("+time+")";                    //notice the "" in href                    $('.popularlist').append('<li><a href="'+url+'">'+showcontent+'</a></li>');                }            },        error: function(error){            alert("Error:"+error.code+" "+error.message);        }        }    )    });这段代码的核心逻辑就是对 Counter 对象的增加和查询，每一篇文章都会有一个 time 字段来记录访问次数。这里查询的时候我用的是文章通过 Hexo 生成的 URL 作为主键的，所以 post 文件夹目录下的文件名一旦取好就不要轻易修改了，要不然访问次数会重新计算的:)。修改 config.yml最后，修改 theme/ 你的主题 /config.yml 文件,在 widgets: 选项找个位置下添加 - popular_posts 即可。小结插件的效果可以见我博客的右侧”浏览数目“插件，样式和文章显示数目可以直接在代码里改,浏览量数据都存在 “Counter” 表中PS：这个浏览量数据是可以自己改的]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>购物清单</title>
       <link href="/34434.html"/>
       <url>/34434.html</url>
